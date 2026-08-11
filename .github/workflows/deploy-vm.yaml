@@ -38,22 +38,34 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
-      # 4. Initialize Terraform
+      # # 4. Initialize Terraform
+      # - name: Terraform Init
+      #   working-directory: terraform
+      #   run: terraform init
+
+      # # 5. Validate Terraform
+      # - name: Terraform Validate
+      #   working-directory: terraform
+      #   run: terraform validate
+
+      # # 6. Show planned changes
+      # - name: Terraform Plan
+      #   working-directory: terraform
+      #   run: terraform plan
+
+      # # 7. Apply
+      # - name: Terraform Apply
+      #   working-directory: terraform
+      #   run: terraform apply -auto-approve
+
       - name: Terraform Init
-        working-directory: terraform
         run: terraform init
 
-      # 5. Validate Terraform
       - name: Terraform Validate
-        working-directory: terraform
         run: terraform validate
 
-      # 6. Show planned changes
       - name: Terraform Plan
-        working-directory: terraform
         run: terraform plan
 
-      # 7. Apply
       - name: Terraform Apply
-        working-directory: terraform
         run: terraform apply -auto-approve
