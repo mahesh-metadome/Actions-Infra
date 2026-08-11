@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_ID: "digital-production-473108"
+  PROJECT_ID: "platform-team-452807"
   REGION: "asia-south1"
   ZONE: "asia-south1-a"
 
