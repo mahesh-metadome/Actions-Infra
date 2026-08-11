@@ -5,7 +5,7 @@ on:
     branches:
       - dev
     paths:
-      - "terraform/**"
+      - "*.tf"
       - ".github/workflows/deploy-vm.yml"
 
   workflow_dispatch:
